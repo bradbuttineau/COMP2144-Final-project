@@ -22,15 +22,16 @@
 </head>
 
 <body>
-    <a-scene>
         <a-scene>
+             <!--panels-->
+ <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4"></a-entity>
+ <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
+ <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
+ <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
             <a-assets>
-                <!--panels-->
-                <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4"></a-entity>
-                <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
-                <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-                <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
-                </a-entity>
+               
+                <!--audio-->
+
                 <audio id="click-sound"
                     src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
