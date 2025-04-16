@@ -20,9 +20,9 @@
       sound="on: click; src: #click-sound"
       event-set__mouseenter="scale: 1.2 1.2 1"
       event-set__mouseleave="scale: 1 1 1"
-      event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
-      proxy-event="event: click; to: #image-360; as: fade">
-    </a-entity>
+      event-set__click="_target: #image-360; _delay: 300; material.src: ${src}">
+    
+      <a-entity>
   </script>
 </head>
 
@@ -30,7 +30,6 @@
   <a-scene>
     <a-assets>
       <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-
       <!-- Images. -->
       <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
       <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
@@ -56,11 +55,11 @@
     </a-assets>
 
     <!--Panels-->
-    <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4">
-      <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
-      <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-      <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
-    </a-entity>
+    <!-- <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4"> -->
+      <!-- <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity> -->
+      <!-- <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity> -->
+      <!-- <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity> -->
+    <!-- </a-entity> -->
 
 
   </a-scene>
