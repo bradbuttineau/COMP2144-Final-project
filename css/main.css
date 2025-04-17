@@ -1,0 +1,11 @@
+#myButton {
+    color: yellow;
+    background-color: red;
+    border: 2px yellow solid; 
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    top: 600;
+    left: 350;
+    z-index: 3;
+  }
