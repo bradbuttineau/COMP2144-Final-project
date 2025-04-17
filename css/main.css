@@ -6,6 +6,17 @@
     height: 50px;
     width: 150px;
     top: 600;
-    left: 350;
+    left: 600;
     z-index: 3;
+  }
+  #myButton2 {
+    color: yellow;
+    background-color: red;
+    border: 2px yellow solid; 
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    top: 600;
+    left: 800;
+    z-index: 6;
   }

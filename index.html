@@ -28,15 +28,13 @@
       animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
       animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
-    <!-- Link template we will build. -->
-    <a-entity class="link" geometry="primitive: plane; height: 1; width: 1" material="shader: flat; src: #cubes-thumb"
-      sound="on: click; src: #click-sound"></a-entity>
+
 
     <!-- Camera + Cursor. -->
-    <a-camera>
+    <a-camera id="my-camera" position="0 1.6 0" rotation="0 0 0">
       <a-cursor id="cursor"
-        animation__click="property: scale; from: 1 1 1; to: 12 12 12; easing: easeInCubic; dur: 150; startEvents: click"
-        animation__clickreset="property: scale; to: 5 5 5; dur: 1; startEvents: animationcomplete__click"
+        animation__click="property: scale; from: 0.4 0.4 0.4; to: 12; easing: easeInCubic; dur: 150; startEvents: click"
+        animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
         animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
     </a-camera>
 
@@ -52,8 +50,9 @@
 
     <a-image src="./assets/WHMIS.jpg" position="0 1 -1" rotation="0 0 0" width="1" height="1" depth="1"></a-image>
     <button id="myButton">click me</button>
-    <a-image src="./assets/Lifting Techniques.jpg" position="-2 1 -1 " rotation="0 0 0" width="1" height="1"></a-image>
 
+    <a-image src="./assets/Lifting Techniques.jpg" position="-2 1 -1" rotation="0 0 0" width="1" height="1"></a-image>
+    <button id="myButton2">click me</button>
   </a-scene>
 </body>
 

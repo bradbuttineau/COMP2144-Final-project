@@ -10,10 +10,36 @@ import './main.css'
 
 </a-entity>
 
+const camera = document.querySelector('#my-camera');
+const initialRotation = camera.getAttribute('rotation');
 
+// Rotate the camera by 20 degrees along the x-axis
+camera.setAttribute('rotation', {
+    x: initialRotation.x + 20,
+    y: initialRotation.y,
+    z: initialRotation.z
+});
+
+// Move the camera forward by 2 units
+camera.setAttribute('position', {
+    x: camera.getAttribute('position').x,
+    y: camera.getAttribute('position').y,
+    z: camera.getAttribute('position').z - 2
+});
+
+
+//Buttons
 AFRAME.registerComponent('button', {
     init() {
         const btn = document.getElementById('myButton')
+        btn.addEventListener('click', () => {
+            window.open('https://google.com', '_blank')
+        })
+    }
+})
+AFRAME.registerComponent('button', {
+    init() {
+        const btn = document.getElementById('myButton2')
         btn.addEventListener('click', () => {
             window.open('https://google.com', '_blank')
         })
