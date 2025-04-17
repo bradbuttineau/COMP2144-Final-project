@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>360° Image Browser</title>
+  <title>Final Project</title>
   <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
   <script src="https://unpkg.com/aframe-layout-component@5.x.x/dist/aframe-layout-component.min.js"></script>
@@ -9,24 +9,6 @@
   <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss"></script>
   <link rel="stylesheet" href="./css/main.css">
   <script src="./app.js"></script>
-
-
-  <!---Javascript-->
-  <script id="link" type="text/html">
-    
-    <a-entity class="link"
-      geometry="primitive: plane; height: 1; width: 1"
-      material="shader: flat; src: #cubes-thumb"
-      sound="on: click; src: #click-sound"
-      geometry="primitive: plane; height: 1; width: 1"
-      material="shader: flat; src: ${thumb}"
-      sound="on: click; src: #click-sound"
-      event-set__mouseenter="scale: 1.2 1.2 1"
-      event-set__mouseleave="scale: 1 1 1"
-      event-set__click="_target: #image-360; _delay: 300; material.src: ${src}">
-    
-      <a-entity>
-  </script>
 </head>
 
 <body>
@@ -53,8 +35,8 @@
     <!-- Camera + Cursor. -->
     <a-camera>
       <a-cursor id="cursor"
-        animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
-        animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
+        animation__click="property: scale; from: 1 1 1; to: 12 12 12; easing: easeInCubic; dur: 150; startEvents: click"
+        animation__clickreset="property: scale; to: 5 5 5; dur: 1; startEvents: animationcomplete__click"
         animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
     </a-camera>
 
@@ -70,7 +52,7 @@
 
     <a-image src="./assets/WHMIS.jpg" position="0 1 -1" rotation="0 0 0" width="1" height="1" depth="1"></a-image>
     <button id="myButton">click me</button>
-    <a-image src="./assets/Lifting Techniques.jpg" position="0 0 0 " rotation="0 0 0" width="1" height="1"></a-image>
+    <a-image src="./assets/Lifting Techniques.jpg" position="-2 1 -1 " rotation="0 0 0" width="1" height="1"></a-image>
 
   </a-scene>
 </body>
