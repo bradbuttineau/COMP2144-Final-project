@@ -11,11 +11,8 @@ event-set__click="_target: #image-360; _delay: 300; material.src: ${src}">
 </a-entity>
 
 
-AFRAME.registerComponent('button', {
-    init() {
-      const btn = document.getElementById('myButton')
-      btn.addEventListener('click', () => {
-        window.open('./WHMIS', '_blank')
-      })
-    }
-  })
+ 
+ 
+ 
+ 
+ 
