@@ -11,7 +11,7 @@
     cursor: pointer;
     height: 20px;
     width: 180px;
-    top: 600;
-    left: 1050;
-    z-index: 3;
+    top: 70%;
+    left: 50%;
+    z-index: 4;
 }

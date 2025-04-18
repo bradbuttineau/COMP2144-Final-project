@@ -9,7 +9,8 @@
     <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
     <script src="https://unpkg.com/aframe-layout-component@5.x.x/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss"></script>
+    <script
+        src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss"></script>
     <link rel="stylesheet" href="./css/lifitngTech.css">
     <script src="./js/liftingTech.js"></script>
 
@@ -28,8 +29,8 @@
             animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur:300; startEvents:  animationcomplete__fade"></a-sky>
 
-       
-       
+
+
         <!-- Camera + Cursor. -->
         <a-camera>
             <a-cursor id="cursor"
@@ -43,22 +44,38 @@
 
 
             <!--Hands-->
-            <a-entity id="teleHand"
-            hand-controls="left"
-            teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"
-          ></a-entity>
-    
-          <a-entity id="blockHand"
-            hand-controls="right"
-            controller-cursor
-            intersection-spawn="event: click; mixin: voxel"
-          ></a-entity>
-           
+            <a-entity id="teleHand" hand-controls="left"
+                teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
+
+            <a-entity id="blockHand" hand-controls="right" controller-cursor
+                intersection-spawn="event: click; mixin: voxel"></a-entity>
+
         </a-assets>
-        
+        <a-entity mixin="marker" position="0 1 0.01"></a-entity>
+        <a-entity id="color" position="0 1 -1"
+            animation="property: components.text.material.uniforms.color.value; type: color; to: red; dir: alternate; loop: true"
+            text="color: black; align: center; value: Welcome to the Lifing technique mondule!!! width: 12">
+        </a-entity>
+
+        <!--images-->
+        <a-image src="../assets/cemrecan-yurtman-Jboc8zu1-wc-unsplash.jpg" position="3 1 0" rotation="-1 -15 0"
+            width="4" height="4" depth="1"></a-image>
+        <a-image src="../assets/warehouse_assident_05.jpg" position="5 2 0" rotation="-1 -15 0" width="4" height="4"
+            depth="1"></a-image>
+        <a-image src="../assets/heri-susilo-3qmhnE89a5g-unsplash.jpg" position="3 1 0" rotation="-1 -15 0" width="4"
+            height="4" depth="1"></a-image>
+        <a-image src="../assets/tanya-paquet-wjHdeYmI-XU-unsplash.jpg" position="-3 1 0" rotation="-1 -15 0" width="4"
+            height="4" depth="1"></a-image>
+        <a-image src="../assets/5516928.jpg" position="3 1 0" rotation="-1 -15 0" width="4" height="4"
+            depth="1"></a-image>
+
+
+
+
+
         <a href="../index.html" id="myButton">Back</a>
-        
-        
+
+
     </a-scene>
 
 </body>

@@ -31,7 +31,7 @@
 
 
     <!-- Camera + Cursor. -->
-    <a-camera id="my-camera" position="-1 1 0" rotation="0 0 0">
+    <a-camera id="my-camera" position="-1 1 1" rotation="0 0 0">
       <a-cursor id="cursor"
         animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
         animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
@@ -44,6 +44,19 @@
       <img id="L9-img-02" src="./assets/Lifting Techniques.jpg">
     </a-assets>
 
+    <!--text-->
+    <a-entity mixin="marker" position="0 3 -6"></a-entity>
+    <a-entity id="color" position="-3 3 -2"
+        animation="property: components.text.material.uniforms.color.value; type: color; to: yelllow; dir: alternate; loop: true"
+        text="color: green; align: center; value: Quick Training modules; width: 12">
+    </a-entity>
+
+    <a-entity mixin="marker" position="0 3 -6"></a-entity>
+    <a-entity id="color" position="0 2 -2"
+        animation="property: components.text.material.uniforms.color.value; type: color; to: blue; dir: alternate; loop: true"
+        text="color: black; align: center; value: Please Click buttons below to begin; width: 4">
+    </a-entity>
+   
     <a-image src="./assets/WHMIS.jpg" position="0 1 -1" rotation="0 0 0" width="1" height="1" depth="1"></a-image>
     <a href="./html/WHMIS.html" id="myButton">Go to WHMIS Symbols</a>
 
