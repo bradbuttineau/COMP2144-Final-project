@@ -28,8 +28,8 @@
             animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur:300; startEvents:  animationcomplete__fade"></a-sky>
 
-        <a-entity class="link" geometry="primitive: plane; height: 1; width: 1"
-            material="shader: flat; src: #cubes-thumb" sound="on: click; src: #click-sound"></a-entity>
+       
+       
         <!-- Camera + Cursor. -->
         <a-camera>
             <a-cursor id="cursor"
@@ -39,11 +39,24 @@
             </a-cursor>
         </a-camera>
         <a-assets>
-           
+
+
+
+            <!--Hands-->
+            <a-entity id="teleHand"
+            hand-controls="left"
+            teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"
+          ></a-entity>
+    
+          <a-entity id="blockHand"
+            hand-controls="right"
+            controller-cursor
+            intersection-spawn="event: click; mixin: voxel"
+          ></a-entity>
            
         </a-assets>
-        <a-image src="./assets/WHMIS.jpg" position="0 1 -1" rotation="0 0 0" width="1" height="1" depth="1"></a-image>
-        <a href="../index.html" id="myButton">back</a>
+        
+        <a href="../index.html" id="myButton">Back</a>
         
         
     </a-scene>

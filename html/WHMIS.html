@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
     <script
         src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss"></script>
-    <link rel="stylesheet" href="./css/WHMIS.css">
+    <link rel="stylesheet" href="../css/WHMIS.css">
     <script src="./js/WHMIS.js"></script>
 </head>
 
@@ -43,7 +43,6 @@
         </a-camera>
 
         <a-assets>
-
             <img id="L9-img-02" src="../assets/WHMISchart.jpg">
             <img id="L9-img-03" src="../assets/pictograph.jpg">
             <!--Hands-->
@@ -53,10 +52,19 @@
             <a-entity id="blockHand" hand-controls="right" controller-cursor
                 intersection-spawn="event: click; mixin: voxel"></a-entity>
         </a-assets>
-
-
-
-        <a-image src="../assets/WHMISchart.jpg" position="3 1 0" rotation="-1 -15 0" width="4" height="4"
+       
+        <a-entity mixin="marker" position="0 1 0.01"></a-entity>
+      <a-entity id="color" position="0 4 0"
+                animation="property: components.text.material.uniforms.color.value; type: color; to: red; dir: alternate; loop: true"
+                text="color: black; align: center; value: Welcome to the WHIMS training Module!!; width: 8">
+      </a-entity>
+       
+       
+      
+      
+      
+      </a-entity>
+     <a-image src="../assets/WHMISchart.jpg" position="3 1 0" rotation="-1 -15 0" width="4" height="4"
             depth="1"></a-image>
         <a-image src="../assets/pictograph.jpg" position="-3 1 0" rotation="-1 15 0" width="4" height="4"
             depth="1"></a-image>
@@ -68,7 +76,7 @@
 
 
 
-        <a id="mybutton" src="../index.html">Back</a>
+        <a  href="../index.html"id="mybutton">Back</a>
 
 
 
