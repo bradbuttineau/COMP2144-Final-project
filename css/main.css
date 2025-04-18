@@ -1,22 +1,35 @@
-.mybutton {
+#mybutton {
     color: yellow;
     background-color: red;
-    border: 4px yellow solid; 
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
     position: absolute;
-    height: 50px;
-    width: 150px;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 20px;
+    width: 180px;
     top: 600;
-    left: 600;
+    left: 1050;
     z-index: 3;
-  }
-.mybutton2 {
+}
+
+#mybutton2 {
     color: yellow;
     background-color: red;
-    border: 4px yellow solid; 
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
     position: absolute;
-    height: 50px;
-    width: 150px;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 20px;
+    width: 180px;
     top: 600;
-    left: 800;
+    left: 250;
     z-index: 6;
-  }
+}
