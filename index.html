@@ -31,9 +31,8 @@
 
 
     <!-- Camera + Cursor. -->
-    <a-camera id="my-camera" position="0 1.6 0" rotation="0 0 0">
+    <a-camera id="my-camera" position="-1 1 0" rotation="0 0 0">
       <a-cursor id="cursor"
-        animation__click="property: scale; from: 0.4 0.4 0.4; to: 12; easing: easeInCubic; dur: 150; startEvents: click"
         animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
         animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
     </a-camera>
@@ -45,14 +44,11 @@
       <img id="L9-img-02" src="./assets/Lifting Techniques.jpg">
     </a-assets>
 
-
-
-
     <a-image src="./assets/WHMIS.jpg" position="0 1 -1" rotation="0 0 0" width="1" height="1" depth="1"></a-image>
-    <button id="myButton">click me</button>
+    <a href="./html/WHMIS.html" id="myButton">Go to WHMIS Symbols</a>
 
     <a-image src="./assets/Lifting Techniques.jpg" position="-2 1 -1" rotation="0 0 0" width="1" height="1"></a-image>
-    <button id="myButton2">click me</button>
+    <a href="./html/liftingTech.html" id="myButton2">Go to Proper lifting tutorial</a>
   </a-scene>
 </body>
 

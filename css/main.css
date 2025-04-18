@@ -1,7 +1,7 @@
-#myButton {
+.mybutton {
     color: yellow;
     background-color: red;
-    border: 2px yellow solid; 
+    border: 4px yellow solid; 
     position: absolute;
     height: 50px;
     width: 150px;
@@ -9,10 +9,10 @@
     left: 600;
     z-index: 3;
   }
-  #myButton2 {
+.mybutton2 {
     color: yellow;
     background-color: red;
-    border: 2px yellow solid; 
+    border: 4px yellow solid; 
     position: absolute;
     height: 50px;
     width: 150px;
